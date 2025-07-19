@@ -1,0 +1,357 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>深度语言表征 | Chencong</title>
+<meta name="description" content="温故而知新" />
+<link rel="shortcut icon" href="https://chencong.cc/favicon.ico?v=1752893501211">
+<link href="https://cdn.remixicon.com/releases/v1.3.1/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+<link rel="stylesheet" href="https://chencong.cc/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="深度语言表征 | Chencong - Atom Feed" href="https://chencong.cc/atom.xml">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+  </head>
+  <body>
+    <div class="site-nav has-cover">
+      <div class="head">
+  <div class="inner">
+    <a class="site-name" href="https://chencong.cc">
+        <span>Chencong</span>
+    </a>
+    <label class="burger" for="burger"></label>
+    <input id="burger" type="checkbox">
+    <button class="burger">
+      <div>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+    <nav class="info_nav">
+      
+        
+          <a href="/">首页</a>
+        
+      
+        
+          <a href="/archives">归档</a>
+        
+      
+        
+          <a href="/tags">标签</a>
+        
+      
+        
+          <a href="/post/about">关于</a>
+        
+      
+    </nav>
+  </div>
+</div>
+    </div>
+    <article role="main" class="hentry has-cover">
+      
+        <div class="entry-cover js-cover" data-src="https://pic.imgdb.cn/item/674c2318d0e0a243d4db997d.png" data-width="900" data-height="423" style="background-image:url(https://pic.imgdb.cn/item/674c2318d0e0a243d4db997d.png); height: 80vw;">
+          <h1 class="post-title">深度语言表征</h1>
+        </div>
+      
+      <h1 class="entry-title" itemprop="headline">深度语言表征</h1>
+      <div class="entry-meta">
+        <time class="updated" datetime="2025-07-19 10:04:23">2025-07-19</time>
+        <span class="author vcard">
+          3 min read
+        </span>
+      </div>
+      <div class="post-content yue">
+        <p>近年来，<strong>深度语言表征（Deep Language Representation）</strong> 的研究在自然语言处理（NLP）领域取得了重大突破，尤其是基于 <strong>Transformer</strong> 和大规模预训练的语言模型。以下是一些关键论文，涵盖了从 <strong>词嵌入</strong> 到 <strong>大语言模型（LLM）</strong> 的演进历程：</p>
+<h4 id="1-词嵌入静态表征"><strong>1. 词嵌入（静态表征）</strong></h4>
+<table>
+<thead>
+<tr>
+<th>模型</th>
+<th>论文名称</th>
+<th>年份</th>
+<th>核心贡献</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Word2Vec</td>
+<td><a href="https://arxiv.org/abs/1301.3781"><em>Efficient Estimation of Word Representations in Vector Space</em></a></td>
+<td>2013</td>
+<td>提出CBOW/Skip-gram</td>
+</tr>
+<tr>
+<td>GloVe</td>
+<td><a href="https://nlp.stanford.edu/pubs/glove.pdf"><em>GloVe: Global Vectors for Word Representation</em></a></td>
+<td>2014</td>
+<td>全局共现统计</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2-上下文相关表征"><strong>2. 上下文相关表征</strong></h4>
+<table>
+<thead>
+<tr>
+<th>模型</th>
+<th>论文名称</th>
+<th>年份</th>
+<th>核心贡献</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ELMo</td>
+<td><a href="https://arxiv.org/abs/1802.05365"><em>Deep Contextualized Word Representations</em></a></td>
+<td>2018</td>
+<td>双向LSTM动态词向量</td>
+</tr>
+<tr>
+<td>BERT</td>
+<td><a href="https://arxiv.org/abs/1810.04805"><em>BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</em></a></td>
+<td>2018</td>
+<td>双向Transformer + MLM</td>
+</tr>
+</tbody>
+</table>
+<h4 id="3-自回归语言模型"><strong>3. 自回归语言模型</strong></h4>
+<table>
+<thead>
+<tr>
+<th>模型</th>
+<th>论文名称</th>
+<th>年份</th>
+<th>核心贡献</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPT-1</td>
+<td><a href="https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf"><em>Improving Language Understanding by Generative Pre-training</em></a></td>
+<td>2018</td>
+<td>单向Transformer预训练</td>
+</tr>
+<tr>
+<td>GPT-2</td>
+<td><a href="https://arxiv.org/abs/2005.14165"><em>Language Models are Few-Shot Learners</em></a></td>
+<td>2019</td>
+<td>大规模少样本学习</td>
+</tr>
+<tr>
+<td>GPT-3</td>
+<td>同上（技术扩展）</td>
+<td>2020</td>
+<td>175B参数零样本推理</td>
+</tr>
+</tbody>
+</table>
+<h4 id="4-跨语言模型xlm系列"><strong>4. 跨语言模型（XLM系列）</strong></h4>
+<table>
+<thead>
+<tr>
+<th>模型</th>
+<th>论文名称</th>
+<th>年份</th>
+<th>核心贡献</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>XLM</td>
+<td><a href="https://arxiv.org/abs/1901.07291"><em>Cross-lingual Language Model Pretraining</em></a></td>
+<td>2019</td>
+<td>MLM + TLM跨语言任务</td>
+</tr>
+<tr>
+<td>XLM-R</td>
+<td><a href="https://arxiv.org/abs/1911.02116"><em>Unsupervised Cross-lingual Representation Learning at Scale</em></a></td>
+<td>2020</td>
+<td>100种语言RoBERTa优化</td>
+</tr>
+</tbody>
+</table>
+<h4 id="5-高效轻量化模型"><strong>5. 高效轻量化模型</strong></h4>
+<table>
+<thead>
+<tr>
+<th>模型</th>
+<th>论文名称</th>
+<th>年份</th>
+<th>核心贡献</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DistilBERT</td>
+<td><a href="https://arxiv.org/abs/1910.01108"><em>DistilBERT, a Distilled Version of BERT</em></a></td>
+<td>2019</td>
+<td>知识蒸馏压缩BERT</td>
+</tr>
+<tr>
+<td>ALBERT</td>
+<td><a href="https://arxiv.org/abs/1909.11942"><em>ALBERT: A Lite BERT for Self-supervised Learning</em></a></td>
+<td>2019</td>
+<td>参数共享 + SOP任务</td>
+</tr>
+</tbody>
+</table>
+<h4 id="6-多模态与跨模态"><strong>6. 多模态与跨模态</strong></h4>
+<table>
+<thead>
+<tr>
+<th>模型</th>
+<th>论文名称</th>
+<th>年份</th>
+<th>核心贡献</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CLIP</td>
+<td><a href="https://arxiv.org/abs/2103.00020"><em>Learning Transferable Visual Models From Natural Language Supervision</em></a></td>
+<td>2021</td>
+<td>图像-文本对比学习</td>
+</tr>
+<tr>
+<td>Flamingo</td>
+<td><a href="https://arxiv.org/abs/2204.14198"><em>Flamingo: a Visual Language Model for Few-Shot Learning</em></a></td>
+<td>2022</td>
+<td>多模态少样本学习</td>
+</tr>
+</tbody>
+</table>
+<h4 id="7-大语言模型与对齐"><strong>7. 大语言模型与对齐</strong></h4>
+<table>
+<thead>
+<tr>
+<th>模型</th>
+<th>论文名称</th>
+<th>年份</th>
+<th>核心贡献</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ChatGPT</td>
+<td><a href="https://arxiv.org/abs/2203.02155"><em>Training Language Models to Follow Instructions with Human Feedback</em></a></td>
+<td>2022</td>
+<td>RLHF对齐人类偏好</td>
+</tr>
+<tr>
+<td>LLaMA</td>
+<td><a href="https://arxiv.org/abs/2302.13971"><em>LLaMA: Open and Efficient Foundation Language Models</em></a></td>
+<td>2023</td>
+<td>开源高效LLM</td>
+</tr>
+</tbody>
+</table>
+<h3 id="技术演进关键路径"><strong>技术演进关键路径</strong></h3>
+<ol>
+<li><strong>从静态到动态</strong>：<br>
+Word2Vec → ELMo → BERT（上下文敏感）</li>
+<li><strong>从单语到多语言</strong>：<br>
+BERT → XLM → XLM-R → mT5（跨语言通用表征）</li>
+<li><strong>从语言到多模态</strong>：<br>
+BERT → CLIP/Flamingo（视觉-语言联合建模）</li>
+<li><strong>从通用到高效</strong>：<br>
+BERT → DistilBERT/ALBERT（轻量化部署）</li>
+</ol>
+
+      </div>
+      <div class="entry-block">
+        <div class="entry-tags">
+          
+            <a href="https://chencong.cc/tag/drEBtWdVg0/">
+              NLP
+            </a>
+          
+        </div>
+      </div>
+    </article>
+    
+    
+      <section class="post-section prev-post">
+        <div class="inner">
+          <h3>后一篇</h3>
+          <a href="https://chencong.cc/post/gua-hao-sheng-cheng-wen-ti/">
+            <strong>括号生成问题</strong>
+          </a>
+        </div>
+      </section>
+    
+
+    
+      
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '7e50c345c1a15feb2122',
+    clientSecret: '14a6ca52d1d61eac31abb073ef2d9d8b3b586851',
+    repo: 'Comments',
+    owner: 'chencong-jxnu',
+    admin: ['chencong-jxnu'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+      
+
+      
+    
+
+    <footer class="footer">
+  <div class="main">
+    <a href="https://chencong.cc">
+      <img class="avatar" src="https://chencong.cc/images/avatar.png?v=1752893501211" alt="Chencong">
+    </a>
+    <div class="footer__social">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <p class="footer__sosumi">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </p>
+    <a class="footer-rss" href="https://chencong.cc/atom.xml">RSS</a>
+  </div>
+</footer>
+
+<script src="https://chencong.cc/media/prism.js"></script>
+<script>
+  Prism.highlightAll()
+</script>
+
+  </body>
+</html>
